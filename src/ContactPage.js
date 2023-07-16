@@ -34,7 +34,6 @@ const ContantPage = () => {
     <Grid container spacing={2}>
       <Grid item mt={5} mb={25} xs={6} sx={{ width: "auto", height: "25rem" }}>
         <form>
-          {/* Content section */}
           <h2>Content Section</h2>
           {/* Add your content here */}
           <Grid item xs={12} mt={2}>
