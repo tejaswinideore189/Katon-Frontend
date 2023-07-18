@@ -6,7 +6,6 @@ import image1 from "../src/Image/Slider 1.jpg";
 import image2 from "../src/Image/Slider 2.jpg";
 import image3 from "../src/Image/Slider 3.jpg";
 
-
 const ImageCarousel = () => {
   return (
     <>

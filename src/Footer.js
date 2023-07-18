@@ -1,22 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 import {
   // Typography,
   IconButton,
   Grid,
-  Link,
   Box,
   Container,
   Divider,
 } from "@mui/material";
 
-import './App.css';
-
+import "./App.css";
 
 function Footer() {
   return (
-    <Box component="footer" sx={{ bgcolor: "background.paper"}} fixed>
-      <Container style={{ backgroundColor: "white",marginTop:"-4%",marginBottom:"-4%",position:"relative",maxWidth:"1535px"}}>
+    <Box component="footer" sx={{ bgcolor: "background.paper" }} fixed>
+      <Container
+        style={{
+          backgroundColor: "white",
+          marginTop: "-4%",
+          marginBottom: "-4%",
+          position: "relative",
+          maxWidth: "1535px",
+        }}
+      >
         <Grid container spacing={2}>
           <Grid item xs={6} sm={4}>
             {/* <Typography variant="h6">Follow Us</Typography> */}
@@ -32,32 +39,32 @@ function Footer() {
           </Grid>
           <Grid item xs={12} sm={4}>
             {/* <Typography variant="h6">Links</Typography> */}
-            <Grid container spacing={2}>
+            <Grid container spacing={1}>
               <Grid item xs={2} sm={2}>
-                <Link color="primary"  to="/about" >
+                <Link color="primary" to="/about">
                   About Us
                 </Link>
               </Grid>
               <Grid item xs={2} sm={3}>
-              <Link  color="primary"  to="/" variant="body2">
-                Contact Us
-              </Link>
-             </Grid>
-             <Grid item xs={2}>
-              <Link color="primary"  to="/" variant="body2">
-                FAQ
-              </Link>
+                <Link color="primary" to="/" variant="body2">
+                  Contact Us
+                </Link>
+              </Grid>
+              <Grid item xs={2}>
+                <Link color="primary" to="/" variant="body2">
+                  FAQ
+                </Link>
               </Grid>
               <Grid item xs={1} sm={2}>
-              <Link color="primary"  to="/terms" variant="body2">
-                T&amp;C
-              </Link>
+                <Link color="primary" to="/terms" variant="body2">
+                  T&amp;C
+                </Link>
               </Grid>
               <br />
-              <Grid item xs={1}  sm={3}>
-              <Link href="#" variant="body2">
-                Privacy Policy
-              </Link>
+              <Grid item xs={1} sm={3}>
+                <Link to="/terms" variant="body2">
+                  Privacy Policy
+                </Link>
               </Grid>
             </Grid>
           </Grid>
